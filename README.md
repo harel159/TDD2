@@ -4,7 +4,7 @@
 * [General info](#general-info)
 * [Technologies](#technologies)
 * [Class holiday](#class-holiday)
-* [Version] (#version)
+* [Version](#version)
 * [Setup](#setup)
 
 ## General info
