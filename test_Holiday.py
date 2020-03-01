@@ -1,11 +1,11 @@
 import unittest
 from unittest.mock import Mock, patch
-from src.holiday import Holidays
+from holidays import Holidays
 
 
 class TestHoliday(unittest.TestCase):
 
-    @patch('src.holiday.requests.get')
+    @patch('holidays.requests.get')
     def test_holiday_connection(self,mock_get):
 
         holidays_information = {"meta":{"code":200},
@@ -134,7 +134,7 @@ class TestHoliday(unittest.TestCase):
         # assert
         self.assertEqual(holiday_result,expected)
 
-    @patch('src.holiday.requests.get')
+    @patch('holidays.requests.get')
     def test_holiday_countries(self,mock_get):
         countries_information = {"meta":{"code":200},
                     "response":{"url":"https:\/\/calendarific.com\/supported-countries",
